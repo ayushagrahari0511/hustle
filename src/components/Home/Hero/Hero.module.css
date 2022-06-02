@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding:3rem 0;
     /* align-items: center; */
     /* justify-content: center; */
     width: 100%;
@@ -9,6 +9,7 @@
 
 .hero1 {
     display: flex;
+    margin-top: 7rem;
     align-items: center;
     justify-content: space-between;
 }
@@ -61,19 +62,67 @@
     width: 70%;
 }
 
+.hero2 {
+    width: 100%;
+    display: flex;
+    margin-top: 7rem ;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.hero2 > button {
+    cursor: pointer;
+    width: 45rem;
+    height: 20rem;
+}
+
+.hero2 > button > h3 {
+    font-size: 3rem;
+}
+
+.hero2 > button > img {
+    width: 6rem;
+}
+
+.dark > h3 {
+    font-size: 3rem;
+    color: #fff;
+}
 
 
 /*  */
 @media (max-width: 1400px) {
+    .hero1 {
+        margin-top: 4rem;
+    }
 
     .hero1_left {
         width: 40%;
     }
+
     .hero1_left > h2 {
         margin-bottom: 2rem;
     }
 
-
+    .hero2 > button {
+        cursor: pointer;
+        width: 40rem;
+        height: 18rem;
+    }
+    
+    .hero2 > button > h3 {
+        font-size: 2.5rem;
+    }
+    
+    .hero2 > button > img {
+        width: 5rem;
+    }
+    
+    .dark > h3 {
+        font-size: 2.5rem;
+        color: #fff;
+    }
   }
   
   

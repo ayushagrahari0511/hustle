@@ -21,6 +21,21 @@ const Hero = () => {
                         <img src="../Frame.svg" alt="" />
                     </div>
                 </div>
+                <div className={styles.hero2}>
+                    <button className={`button_dark ${styles.dark}`}>
+                        <img src="../profile.svg" alt="" />
+                        <h3>
+                            Explore Talents
+                        </h3>
+                    </button>
+                    <button className={`button_light ${styles.light}`}>
+                        <img src="../jobs.svg" alt="" />
+                        <h3>
+                            Explore Jobs
+                        </h3>
+                    </button>
+
+                </div>
             </div>
         </>
     )

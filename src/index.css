@@ -69,13 +69,14 @@ p {
 }
 
 .wrapper {
-  width: 95%;
+  width: 90%;
 }
 
 /* Styling Button -------------
 ---------------------- */
 
 button {
+  cursor: pointer;
   width: 12rem;
   height: 5.2rem;
 }

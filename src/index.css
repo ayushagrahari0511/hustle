@@ -1,13 +1,215 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  --primary_yellow: #FFE901;
+  --primary_blue: rgba(0, 57, 134, 1);
+  --background: #FFFFFF;
+  --text_dark: rgba(43, 43, 43, 1);
+  --text_mid: rgba(43, 43, 43, 0.8);
+  --text_light: rgba(43, 43, 43, 0.5);
 }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 6.4rem;
+  line-height: 7.8rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 3.9rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+}
+
+h5 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.9rem;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 95%;
+}
+
+/* Styling Button -------------
+---------------------- */
+
+button {
+  width: 12rem;
+  height: 5.2rem;
+}
+
+.button_light {
+  /* outline: none; */
+  border: 2px solid var(--primary_blue);
+  background: #fff;
+  margin: 0 1rem;
+  opacity: 0.8;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: var(--primary_blue);
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.button_light:hover {
+  border: 2.8px solid var(--primary_blue);
+  opacity: 0.8;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 0.3s;
+}
+
+.button_light.pressed {
+  /* animation: SmartAnimate 0.3s ease-out; */
+  border: 2.8px solid var(--primary_blue);
+  background: var(--primary_blue);
+  opacity: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.button_light.pressed>h5 {
+  transition: 0.3s;
+  color: #fff;
+}
+
+.button_dark {
+  outline: none;
+  background: var(--primary_blue);
+  margin: 0 1rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+.button_dark>h5 {
+  font-style: normal;
+  color: #fff;
+}
+
+.button_dark:hover {
+  background: rgba(0, 47, 111, 1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.button_dark.pressed {
+  background: #001A3E;
+  transition: 0.3s;
+}
+
+.button_dark.pressed>h5 {
+  transition: 0.3s;
+  color: #fff;
+}
+
+
+
+/*  */
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4rem;
+  }
+  
+  h3 {
+    font-size: 3.2rem;
+  }
+  
+  h4 {
+    font-size: 2rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 10rem;
+    height: 4.2rem;
+  }
+  
+  .button_light {
+    margin: 0 1rem;
+    padding: .1rem;
+    border-radius: .4rem;
+  }
+  
+  .button_dark {
+    padding: 0.1rem;
+    border-radius: .4rem;
+  }
+}
+
+
+@media (max-width: 1199.98px) {
+    
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+  
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+  
+ }

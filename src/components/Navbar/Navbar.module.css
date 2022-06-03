@@ -1,5 +1,5 @@
 .container {
-    padding-top: 2.5rem;
+    padding: 2rem;
     background: #fff;
     position: fixed;
     top: 0;
@@ -30,18 +30,20 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    grid-gap: 4.2rem;
     align-items: center;
 }
 
 .links > li {
     list-style-type: none;
-    margin:0 2rem;
+    /* margin:0 2rem; */
 }
 
 .links > li > a {
     text-decoration: none;
     color: var(--text_mid);
 }
+
 
 .active {
     border-bottom: 2px solid var(--primary_yellow);
@@ -59,3 +61,36 @@
     align-self: flex-end;
 }
 
+
+/*  */
+@media (max-width: 1400px) {
+    .links{
+        grid-gap: 3.5rem;
+    }    
+}
+
+
+@media (max-width: 1199.98px) {
+    .links {
+        grid-gap: 2rem;
+    }
+
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+  
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+  
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+  
+ }

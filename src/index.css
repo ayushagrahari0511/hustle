@@ -76,6 +76,8 @@ p {
 ---------------------- */
 
 button {
+  outline: none;
+  border: none;
   cursor: pointer;
   width: 12rem;
   height: 5.2rem;
@@ -170,7 +172,7 @@ button {
   }
   
   h6 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   p {
@@ -196,7 +198,46 @@ button {
 
 
 @media (max-width: 1199.98px) {
-    
+  h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.4rem;
+    line-height: 4.8rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+  
+  h4 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+  
+  h5 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+  }
+  
+  h6 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  button {
+    width: 9rem;
+    height: 4rem;
+  }
+
 }
 
 

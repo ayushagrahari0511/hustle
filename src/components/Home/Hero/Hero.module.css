@@ -98,7 +98,7 @@
     }
 
     .hero1_left {
-        width: 40%;
+        width: 45%;
     }
 
     .hero1_left > h2 {
@@ -127,8 +127,24 @@
   
   
   @media (max-width: 1199.98px) {
-      
-  }
+
+    .hero1_left > h5 {
+        line-height: 2.4rem;
+    }
+
+    .hero2 > button {
+        width: 32rem;
+        height: 16rem;
+    }
+    
+    .hero2 > button > h3 {
+        font-size: 2rem;
+    }
+    
+    .hero2 > button > img {
+        width: 4rem;
+    }
+      }
   
   
   /* for Medium devices such as tablets */

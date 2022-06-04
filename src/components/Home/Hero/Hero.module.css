@@ -59,7 +59,7 @@
 }
 
 .hero1_right > img {
-    width: 70%;
+    width: 85%;
 }
 
 .hero2 {
@@ -132,6 +132,10 @@
         line-height: 2.4rem;
     }
 
+    .hero1_right > img {
+        width: 90%;
+    }
+
     .hero2 > button {
         width: 32rem;
         height: 16rem;
@@ -149,7 +153,26 @@
   
   /* for Medium devices such as tablets */
   @media (max-width: 991.98px) {
+    .hero1 {
+        margin-top: 2rem;
+    }
+
+    .hero1_left > h5 {
+        line-height: 1.8rem;
+    }
+
+    .hero2 > button {
+        width: 25rem;
+        height: 13rem;
+    }
     
+    .hero2 > button > h3 {
+        font-size: 1.6rem;
+    }
+    
+    .hero2 > button > img {
+        width: 2.5rem;
+    }
   }
   
   /* Small devices (landscape phone, ) */

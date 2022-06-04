@@ -1,7 +1,6 @@
 .home {
     position: relative;
-    /* top: 12rem; */
-    padding-top: 12rem;
+    padding-top: 10rem;
     z-index: 2;
 }
 

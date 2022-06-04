@@ -87,7 +87,12 @@
 
 /* Small devices (landscape phone, ) */
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .container {
+        width: 26rem;
+        padding: 3rem 2rem;
+    }
+}
 
 /* Small devices such as phone */
 

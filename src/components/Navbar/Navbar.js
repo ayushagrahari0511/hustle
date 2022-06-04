@@ -11,9 +11,9 @@ const Navbar = () => {
   const [darkPressed, setDarkPressed] = useState(false)
 
   // State for styling Links
-  useEffect(() => {    
-      const param = location.pathname.split("/")
-      setLink_add(param[1])
+  useEffect(() => {
+    const param = location.pathname.split("/")
+    setLink_add(param[1])
   }, [location.pathname]);
 
   return (
@@ -25,10 +25,11 @@ const Navbar = () => {
               Hustle <span></span>
             </h3>
           </div>
+          <img src="../menu.svg" className={styles.menu} alt="" />
           <div className={styles.links}>
-            <li 
-            className={link_add ==="" ? styles.active : ``}
-            onClick={() => setLink_add("home")}
+            <li
+              className={link_add === "" ? styles.active : ``}
+              onClick={() => setLink_add("home")}
             >
               <Link to="/" >
                 <h6>
@@ -36,21 +37,21 @@ const Navbar = () => {
                 </h6>
               </Link>
             </li>
-            <li className={link_add ==="explore-jobs" ? styles.active : ``}>
+            <li className={link_add === "explore-jobs" ? styles.active : ``}>
               <Link to="/explore-jobs">
                 <h6>
                   Explore Jobs
                 </h6>
               </Link>
             </li>
-            <li className={link_add ==="explore-talents" ? styles.active : ``}>
+            <li className={link_add === "explore-talents" ? styles.active : ``}>
               <Link to="/explore-talents">
                 <h6>
                   Explore Talents
                 </h6>
               </Link>
             </li>
-            <li className={link_add ==="about-us" ? styles.active : ``}>
+            <li className={link_add === "about-us" ? styles.active : ``}>
               <Link to="/about-us">
                 <h6>
                   About us

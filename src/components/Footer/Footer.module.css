@@ -131,11 +131,34 @@
 /* Small devices (landscape phone, ) */
 
 @media (max-width: 767.98px) {
-  
+    .wrapper {
+        grid-gap: .5rem;
+    }
+    
+    .social_icons > a > img {
+        width: 2.5rem;
+        cursor: pointer;
+    }   
+
+    .social_icons {
+        grid-gap: 1.5rem;
+    }
+    
+    .links {
+        grid-gap: 2.5rem;
+    }
 }
 
 /* Small devices such as phone */
 
 @media (max-width: 575.98px) {
-  
+    .social_icons {
+        grid-gap: 1.5rem;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: column;
+        grid-gap: .5rem;
+    }
  }

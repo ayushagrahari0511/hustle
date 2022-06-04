@@ -1,7 +1,7 @@
 .hero {
     display: flex;
     flex-direction: column;
-    padding:3rem 0;
+    padding: 3rem 0;
     /* align-items: center; */
     /* justify-content: center; */
     width: 100%;
@@ -18,7 +18,7 @@
     width: 40%;
 }
 
-.hero1_left > h2 {
+.hero1_left>h2 {
     color: var(--primary_blue);
     margin-bottom: 3rem;
 }
@@ -46,7 +46,7 @@
     z-index: -1;
 }
 
-.hero1_left > h5 {
+.hero1_left>h5 {
     color: var(--text_mid);
     line-height: 3.2rem;
 }
@@ -58,34 +58,34 @@
     justify-content: flex-end;
 }
 
-.hero1_right > img {
+.hero1_right>img {
     width: 85%;
 }
 
 .hero2 {
     width: 100%;
     display: flex;
-    margin-top: 7rem ;
+    margin-top: 7rem;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
 }
 
-.hero2 > button {
+.hero2>button {
     cursor: pointer;
     width: 45rem;
     height: 20rem;
 }
 
-.hero2 > button > h3 {
+.hero2>button>h3 {
     font-size: 3rem;
 }
 
-.hero2 > button > img {
+.hero2>button>img {
     width: 6rem;
 }
 
-.dark > h3 {
+.dark>h3 {
     font-size: 3rem;
     color: #fff;
 }
@@ -101,88 +101,139 @@
         width: 45%;
     }
 
-    .hero1_left > h2 {
+    .hero1_left>h2 {
         margin-bottom: 2rem;
     }
 
-    .hero2 > button {
+    .hero2>button {
         cursor: pointer;
         width: 40rem;
         height: 18rem;
     }
-    
-    .hero2 > button > h3 {
+
+    .hero2>button>h3 {
         font-size: 2.5rem;
     }
-    
-    .hero2 > button > img {
+
+    .hero2>button>img {
         width: 5rem;
     }
-    
-    .dark > h3 {
+
+    .dark>h3 {
         font-size: 2.5rem;
         color: #fff;
     }
-  }
-  
-  
-  @media (max-width: 1199.98px) {
+}
 
-    .hero1_left > h5 {
+
+@media (max-width: 1199.98px) {
+
+    .hero1_left>h5 {
         line-height: 2.4rem;
     }
 
-    .hero1_right > img {
+    .hero1_right>img {
         width: 90%;
     }
 
-    .hero2 > button {
+    .hero2>button {
         width: 32rem;
         height: 16rem;
     }
-    
-    .hero2 > button > h3 {
+
+    .hero2>button>h3 {
         font-size: 2rem;
     }
-    
-    .hero2 > button > img {
+
+    .hero2>button>img {
         width: 4rem;
     }
-      }
-  
-  
-  /* for Medium devices such as tablets */
-  @media (max-width: 991.98px) {
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
     .hero1 {
         margin-top: 2rem;
     }
 
-    .hero1_left > h5 {
+    .hero1_left>h5 {
         line-height: 1.8rem;
     }
 
-    .hero2 > button {
+    .hero2>button {
         width: 25rem;
         height: 13rem;
     }
-    
-    .hero2 > button > h3 {
+
+    .hero2>button>h3 {
         font-size: 1.6rem;
     }
-    
-    .hero2 > button > img {
+
+    .hero2>button>img {
         width: 2.5rem;
     }
-  }
-  
-  /* Small devices (landscape phone, ) */
-  
-  @media (max-width: 767.98px) {
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 0;
+    }
+
+    .hero1 {
+        margin-top: 1rem;
+    }
+
+    .hero2 {
+        margin-top: 4rem;
+    }
+
+    .hero2>button {
+        width: 22rem;
+        height: 11rem;
+    }
+
+    .hero2>button>img {
+        width: 2.2rem;
+    }    
     
-  }
-  
-  /* Small devices such as phone */
-  
-  @media (max-width: 575.98px) {
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+    .hero1 {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5rem;
+        align-items: flex-start;
+    }
+
+    .hero1_left {
+        width: 100%;
+    }
+
+    .hero1_left > h2 {
+        width: 85%;
+    }
+
+    .hero1_right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero1_right>img {
+        width: 90%;
+    }
     
-   }
+    .hero2>button {
+        width: 14rem;
+        height: 10rem;
+    }
+
+    .hero2>button>img {
+        width: 2rem;
+    }    
+}

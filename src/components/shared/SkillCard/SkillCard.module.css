@@ -1,0 +1,89 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    grid-gap: 1rem;
+    padding: 3rem 2rem;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 24px;
+}
+
+.title {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.title > h3 {
+    font-weight: 600;
+    color: var(--primary_blue);
+    font-size: 3rem;
+}
+
+.wrapper > h5 {
+    color: var(--primary_yellow);
+    font-size: 2rem;
+}
+
+/*  */
+@media (max-width: 1400px) {
+    .title > h3 {
+        font-size: 2.5rem;
+    }
+    
+    .wrapper > h5 {
+        font-size: 1.8rem;
+    }
+    
+}
+
+
+@media (max-width: 1199.98px) {
+    .wrapper {
+        border-radius: 1.5rem;
+    }
+    .title > h3 {
+        font-size: 2rem;
+    }
+
+    .title > img {
+        width: 1rem;
+    }
+    
+    .wrapper > h5 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .wrapper {
+        border-radius: 1rem;
+    }
+    .title > h3 {
+        font-size: 1.8rem;
+    }
+
+    .title > img {
+        width: .8rem;
+    }
+    
+    .wrapper > h5 {
+        font-size: 1.4rem;
+    }
+ 
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .wrapper {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {}

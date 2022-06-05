@@ -1,0 +1,102 @@
+.signup {
+    width: 100%;
+    padding-left: 3rem;
+    margin-top: 7rem;
+    background: #EBEBEB;
+    border-radius: 4rem;
+    display: flex;
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    width: 35%;
+}
+
+.desc h2 {
+    color: var(--primary_yellow);
+}
+
+.desc h5 {
+    color: var(--text_mid);
+}
+
+.img {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img > img {
+    width: 85%;
+}
+
+.desc > button > h5 {
+    color: #fff;
+}
+
+/*  */
+@media (max-width: 1400px) {
+    .desc > h5 {
+        font-size: 1.8rem;
+    }
+    
+}
+
+
+@media (max-width: 1199.98px) {
+    .desc {
+        width: 50%;
+    }
+    .img > img{
+        width: 100%;
+    }
+    
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .signup {
+        border-radius: 2rem;
+    }
+    .desc {
+        width: 50%;
+        grid-gap: 1rem;
+    }
+
+    .img {
+        width: 70%;
+    }
+
+    .desc > h5 {
+        font-size: 1.6rem;
+    }
+    
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .signup {
+        flex-direction: column;
+        padding: 0;
+        grid-gap: 0;
+    }
+
+    .desc {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {}

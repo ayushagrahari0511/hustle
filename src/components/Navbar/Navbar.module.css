@@ -8,7 +8,7 @@
 
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
 }
 
@@ -29,6 +29,16 @@
 .menu {
     display: none;
 }
+
+.nav_right {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.nav_right>img {
+    display: none;
+}
+
 
 .links {
     width: 100%;
@@ -88,7 +98,7 @@
     }
 
     .navbar {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr;
     }
 
     .links {
@@ -99,17 +109,40 @@
 /* Small devices (landscape phone, ) */
 
 @media (max-width: 767.98px) {
-
-    .links {
-        display: none;
-    }
-
-    .buttons {
+    .nav_right {
         display: none;
     }
 
     .navbar {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .nav_right.toggle {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        grid-gap: 2rem;
+    }
+
+    .links {
+        width: 100%;
+        flex-direction: column;
+        grid-gap: 2rem;
+    }
+
+    .nav_right.toggle>img {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 2.5rem;
     }
 
     .menu {
@@ -118,6 +151,12 @@
         width: 3rem;
         align-self: center;
         justify-self: flex-end;
+    }
+
+    .buttons {
+        align-items: center;
+        justify-content: center;
+        align-self: center;
     }
 }
 

@@ -5,7 +5,6 @@ import SkillCard from '../../shared/SkillCard/SkillCard'
 
 const Jobs = () => {
     const [location, setLocation] = useState("remote")
-    console.log(location)
     return (
         <>
             <div className={styles.wrapper}>

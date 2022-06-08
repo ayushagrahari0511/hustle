@@ -1,3 +1,4 @@
+
 .wrapper {
     margin-top: 10rem;
     display: flex;
@@ -35,10 +36,15 @@
 }
 
 .title_button > button {
+    padding: .5rem 1rem;
     display: flex;
     align-items: center;
     grid-gap: 1rem;
     width: fit-content;
+}
+
+.title_button > button > img {
+    width: 3rem;
 }
 
 /* Input box start here */
@@ -261,6 +267,16 @@
 
 @media (max-width: 1199.98px) {
 
+    .title {
+        width: 70%;
+        grid-gap: 1.5rem;
+    }
+
+    .title_button > button > img {
+        width: 2.5rem;
+    }
+        
+
     /*  */
     .dropDown>p {
         font-size: 1.8rem;
@@ -307,6 +323,16 @@
 
 /* for Medium devices such as tablets */
 @media (max-width: 991.98px) {
+
+
+    .title {
+        width: 80%;
+        grid-gap: 1.5rem;
+    }
+
+    .title_button > button > img {
+        width: 2rem;
+    }
 
     /*  */
     .input_box {
@@ -357,6 +383,11 @@
 
 @media (max-width: 767.98px) {
 
+    .title {
+        width: 85%;
+        grid-gap: 1rem;
+    }
+
     /*  */
     .input_box {
         padding: 1rem 2rem;
@@ -402,6 +433,17 @@
 /* Small devices such as phone */
 
 @media (max-width: 575.98px) {
+
+    .title_button {
+        flex-direction: column;
+    }
+    
+    /*  */
+    .title {
+        width: 100%;
+        grid-gap: 1.5rem;
+    }
+
     .title {
         margin-top: 5rem;
         width: 100%;

@@ -8,7 +8,7 @@ const ExploreTalents = () => {
 
   return (
     <>
-      <div className='container'>
+      <div className={`${styles.container} container`}>
         <div className={`${styles.wrapper} wrapper`}>
           <div className={styles.title}>
             <h2>Find freelancers for your <br />
@@ -20,8 +20,10 @@ const ExploreTalents = () => {
             <div className={styles.title_button}>
               <button className='button_dark'>
                 <h5>Post a job</h5>
+                <img src="../edit.svg" alt="" />
               </button>
               <button className='button_dark'>
+                <img src="../location_filled.svg" alt="" />
                 <h5>Find Nearby Freelancers</h5>
               </button>
             </div>

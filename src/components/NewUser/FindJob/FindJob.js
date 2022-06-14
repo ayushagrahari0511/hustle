@@ -156,7 +156,7 @@ const FindJob = () => {
                                     <JobCard />
                                 </Link>
                             </div>
-                            <button className={`button_light ${styles.loadMore} hi`}>
+                            <button className={`button_light ${styles.loadMore}`}>
                                 Load More
                             </button>
                         </div>

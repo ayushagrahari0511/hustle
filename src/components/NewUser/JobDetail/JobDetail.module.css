@@ -1,0 +1,77 @@
+.explore {
+    /* width: 100%; */
+    padding-top: 12rem;
+}
+
+.title {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1.5rem;
+}
+
+.title>h2 {
+    color: var(--primary_blue);
+    text-align: center;
+}
+
+.title>h5 {
+    color: var(--text_mid);
+    text-align: center;
+}
+
+.hustle {
+    color: var(--primary_yellow);
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8rem;
+}
+
+/*  */
+@media (max-width: 1400px) {
+
+}
+
+
+@media (max-width: 1199.98px) {
+    .explore {
+        /* width: 100%; */
+        padding-top: 8rem;
+    }
+    
+    .wrapper {
+        padding-top: 7rem;
+        grid-gap: 5rem;
+    }
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .explore {
+        padding-top: 5rem;
+    }
+
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {    
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+    .title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        grid-gap: 2rem;
+        width: 90%;
+    }
+}

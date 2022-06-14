@@ -1,0 +1,28 @@
+.wrapper {
+    width: 25rem;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    align-items: center;
+    /* Drop Shadow-1 */
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    grid-gap: 1rem;
+}
+
+.wrapper > img {
+    position: relative;
+    width: 8rem;
+}
+
+.wrapper > h6 {
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary_blue);
+}
+
+.wrapper > h5 {
+    font-weight: 700;
+    color: var(--primary_blue);
+}

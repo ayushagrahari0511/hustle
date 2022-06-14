@@ -1,0 +1,46 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.map_container {
+    width: 60rem;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    border: 4px solid var(--primary_blue);
+    border-radius: 2.4rem;
+}
+
+/*  */
+/*  */
+/*  */
+@media (max-width: 1199.98px) {
+    .map_container {
+        width: 50rem;
+        height: 40rem;
+    }
+  }
+  
+  
+  /* for Medium devices such as tablets */
+  @media (max-width: 991.98px) {
+    .map_container {
+        width: 40rem;
+        height: 35rem;
+    }
+  }
+  
+    
+  /* Small devices such as phone */
+  
+  @media (max-width: 575.98px) {
+    .map_container {
+        width: 100%;
+        height: 30rem;
+    }
+   }
+  

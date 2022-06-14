@@ -1,0 +1,280 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    padding: 2rem;
+    background: #F5F5F5;
+    border-radius: 1rem;
+}
+
+.wrapper h5 {
+    width: fit-content;
+    background: #fff;
+    color: var(--primary_blue);
+    font-weight: 600;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+.title_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title_wrapper>h3 {
+    color: var(--primary_blue);
+    font-size: 3.6rem;
+}
+
+.save {
+    display: flex;
+    align-items: center;
+    grid-gap: 2.5rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.location>img {
+    width: 4rem;
+}
+
+.location>h4 {
+    color: var(--primary_yellow);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.description {
+    color: var(--text_mid);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+
+.details h4 {
+    color: var(--primary_yellow);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.application {
+    display: flex;
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.application h4 {
+    color: var(--primary_blue);
+}
+
+.payment_verify {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.payment_verify>img {
+    width: 2rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-gap: 1rem;
+    color: var(--primary_blue);
+}
+
+.skills>div {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.application_detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.application_detail h4 {
+    color: var(--primary_blue);
+    font-weight: 700;
+}
+
+.requirements,
+.activity {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+
+.requirements>div,
+.activity>div {
+    display: flex;
+    color: var(--text_mid);
+    grid-gap: 2rem;
+}
+
+.about_client {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    color: var(--primary_blue);
+}
+
+.client_profile {
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    padding: 1rem;
+    background: #F2F2F2;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    grid-gap: 2rem;
+}
+
+.client_profile > img {
+    border-radius: 50%;
+    width: 7rem;
+}
+
+.apply {
+    align-self: center;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    color: #fff;
+    width: 14rem;
+    text-decoration: none;
+    background: var(--primary_blue);
+    opacity: 0.8;
+}
+
+/*  */
+/*  */
+@media (max-width: 1199.98px) {        
+    .title_wrapper>h3 {
+        font-size: 3rem;
+    }
+    
+    .description {
+        font-size: 1.8rem;
+    }
+        
+    .details h4 {
+        font-size: 2rem;
+    }
+        
+    .payment_verify>img {
+        width: 1.8rem;
+    }      
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .title_wrapper>h3 {
+        font-size: 2.8rem;
+    }
+    
+    .description {
+        font-size: 1.6rem;
+    }
+        
+    .details h4 {
+        font-size: 1.8rem;
+    }
+        
+    .payment_verify>img {
+        width: 1.5rem;
+    }      
+  
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .title_wrapper>h3 {
+        font-size: 2.5rem;
+    }
+    
+    .description {
+        font-size: 1.4rem;
+    }
+        
+    .details h4 {
+        font-size: 1.6rem;
+    }  
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+    .wrapper {
+        grid-gap: 2rem;
+        padding: 1rem;
+    }
+    
+    .title_wrapper>h3 {
+        font-size: 2rem;
+    }
+
+    .save {
+        grid-gap: 1rem;
+    }    
+
+    .save img {
+        width: 3rem;
+    }
+
+    .location>h4 {
+        font-size: 1.6rem;
+    }
+    
+    .details {
+        flex-direction: column;
+        grid-gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .details>div {
+        align-items: flex-start;
+        grid-gap: 0;
+    }
+
+    .application {
+        flex-direction: column;
+        align-items: flex-start;
+        grid-gap: .5rem;
+    }
+
+    .skills>div {
+        grid-gap: 2rem;
+    }
+
+    .application_detail {
+        flex-direction: column;
+        align-items: flex-start;
+        grid-gap: 1rem;
+    }
+}

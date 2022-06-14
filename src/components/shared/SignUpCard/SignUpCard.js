@@ -23,7 +23,7 @@ const SignUpCard = () => {
                         </button>
                     </div>
                     <div className={styles.img}>
-                        <img src="../SignCardImage.png" alt="" />
+                        <img src="../../SignCardImage.png" alt="" />
                     </div>
                 </div>
             </div>

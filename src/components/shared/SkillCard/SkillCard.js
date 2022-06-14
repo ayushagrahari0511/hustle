@@ -7,7 +7,7 @@ const SkillCard = ({ title, totalJobs }) => {
             <div className={styles.wrapper}>
                 <div className={styles.title}>
                     <h3>{title}</h3>
-                    <img src="../rightArrow.svg" alt="" />
+                    <img src="../../rightArrow.svg" alt="" />
                 </div>
                 <h5>{totalJobs}</h5>
             </div>

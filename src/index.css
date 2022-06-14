@@ -23,6 +23,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 6.4rem;
   line-height: 7.8rem;
@@ -62,6 +66,11 @@ p {
   line-height: 2.1rem;
 }
 
+.map-container {
+  height: 400px;
+}
+
+
 .container {
   background: #fff;
   width: 100%;
@@ -75,6 +84,7 @@ p {
 .wrapper {
   width: 90%;
 }
+
 
 /* Styling Button -------------
 ---------------------- */

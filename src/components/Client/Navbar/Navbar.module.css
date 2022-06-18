@@ -68,6 +68,10 @@
     color: var(--text_dark);
 }
 
+/*  */
+/*  */
+/*  */
+
 .buttons {
     display: flex;
     position: relative;
@@ -167,6 +171,9 @@
     font-weight: 600;
     font-size: 1.8rem;
 }
+/*  */
+/*  */
+/*  */
 
 
 /*  */

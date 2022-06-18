@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './FreelancerProfile.module.css'
+import styles from '../../NewUser/FreelancerProfile/FreelancerProfile.module.css'
 import { Link } from 'react-router-dom'
 import FreelanceCard from '../../shared/FreelanceCard.js/FreelanceCard'
 import ReviewCard from '../../shared/ReviewCard/ReviewCard'
@@ -13,24 +13,17 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const FreelancerProfile = () => {
+const ClientProfile = () => {
     return (
         <>
             <div className={`container ${styles.container}`}>
                 <div className={`wrapper ${styles.wrapper}`}>
-                    <div className={styles.top_navigation}>
-                        <Link to={`/explore-talents`}>
-                            Explore Talents
-                            <img src="../../rightArrow.svg" alt="" />
-                        </Link>
-                        Freelancer Profile
-                    </div>
                     <div className={styles.profile_container}>
                         <div className={styles.profile_wrapper}>
                             <div className={styles.profile}>
                                 <img src="../../profile10.png" alt="" />
                                 <div className={styles.title}>
-                                    <h3>Freelancer's Name</h3>
+                                    <h3>Client's Name</h3>
                                     <h3>Title</h3>
                                     <div>
                                         <img src="../../location.svg" alt="" />
@@ -40,11 +33,8 @@ const FreelancerProfile = () => {
                             </div>
                             <div className={styles.message}>
                                 <Link to="/">
-                                    <img src="../../message.svg" alt="" />
-                                    <h6>Message</h6>
-                                </Link>
-                                <Link to="/">
-                                    <h6>Hire Me</h6>
+                                    <img src="../../edit_simple.svg" alt="" />
+                                    <h6>Edit</h6>
                                 </Link>
                             </div>
                         </div>
@@ -57,24 +47,6 @@ const FreelancerProfile = () => {
                         <div className={styles.work_history}>
                             <h3>Work History</h3>
                             <h5>24 jobs finished</h5>
-                        </div>
-                        <div className={styles.skills}>
-                            <h3>Skills</h3>
-                            <div>
-                                <h4>Desinger</h4>
-                                <h4>UI/UX</h4>
-                                <h4>Developer</h4>
-                                <h4>Figma</h4>
-                            </div>
-                        </div>
-                        <div className={styles.portfolio}>
-                            <h3>Portfolio</h3>
-                            <div>
-                                <div>
-                                    <img src="../../sneaker.png" alt="" />
-                                    <h5>Title of portfolio</h5>
-                                </div>
-                            </div>
                         </div>
                         <div className={styles.reviews}>
                             <h3>Reviews <span>(14 Reviews)</span></h3>
@@ -98,29 +70,8 @@ const FreelancerProfile = () => {
                                     <SwiperSlide className={styles.portImages}>
                                         <ReviewCard />
                                     </SwiperSlide>
-
                                 </Swiper>
                             </div>
-                        </div>
-                    </div>
-                    <div className={styles.freelancer}>
-                        <div className={styles.arrow}>
-                            <h5>You may also like</h5>
-                            <img src="../../rightArrow.svg" alt="" />
-                        </div>
-                        <div>
-                            <Link to={`/explore-talents/profile/dkf393dlfk`}>
-                                <FreelanceCard img={`../../profile1.png`} />
-                            </Link>
-                            <Link to={`/explore-talents/profile/dkf393dlfk`}>
-                                <FreelanceCard img={`../../profile2.png`} />
-                            </Link>
-                            <Link to={`/explore-talents/profile/dkf393dlfk`}>
-                                <FreelanceCard img={`../../profile3.png`} />
-                            </Link>
-                            <Link to={`/explore-talents/profile/dkf393dlfk`}>
-                                <FreelanceCard img={`../../profile4.png`} />
-                            </Link>
                         </div>
                     </div>
                 </div>
@@ -129,4 +80,4 @@ const FreelancerProfile = () => {
     )
 }
 
-export default FreelancerProfile
+export default ClientProfile

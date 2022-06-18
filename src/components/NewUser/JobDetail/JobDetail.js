@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./JobDetail.module.css"
 import SignUpCard from '../../shared/SignUpCard/SignUpCard'
-import WorkCard from '../../shared/WorkCard.js/WorkCard'
+import WorkCard from '../../shared/WorkCard/WorkCard'
 
 const ExploreJobs = () => {
 

@@ -90,17 +90,22 @@ const ClientNavbar = () => {
               </div>
               <div
                 className={profile ? `${styles.profile} ${styles.active}` : styles.profile}>
-                <div className={styles.profile_info}>
-                  <img src="../../profile.png" alt="" />
-                  <div>
-                    <h5>
-                      Client's Name
-                    </h5>
-                    <h6>
-                      Title
-                    </h6>
+                <Link to={`/me`} onClick={() => {
+                  setProfile(false)
+                  setToggleMenu(false)
+                  }}>
+                  <div className={styles.profile_info}>
+                    <img src="../../profile.png" alt="" />
+                    <div>
+                      <h5>
+                        Client's Name
+                      </h5>
+                      <h6>
+                        Title
+                      </h6>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 <div className={styles.profile_list}>
                   <img src="../../setting.svg" alt="" />
                   <p>

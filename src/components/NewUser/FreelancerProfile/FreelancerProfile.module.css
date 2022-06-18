@@ -8,6 +8,31 @@
     grid-gap: 3rem;
 }
 
+/* Top navigation styling */
+
+.top_navigation {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    grid-gap: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary_blue);
+  }
+  
+  .top_navigation > a {
+    grid-gap: .5rem;
+    color: var(--primary_blue);
+    display: flex;
+    align-items: center;
+  }
+  
+  .top_navigation img {
+    width: .8rem;
+  }
+  
+  /* Top navigation styling ends here */
+
 /*  */
 .profile_container {
     display: flex;
@@ -232,6 +257,10 @@
 /* Small devices such as phone */
 
 @media (max-width: 575.98px) {
+    .profile_container {
+        padding: 3rem 0.5rem;
+    }
+    
     .profile {
         display: flex;
         flex-direction: column;

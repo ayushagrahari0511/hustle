@@ -16,17 +16,17 @@ const ClientFooter = () => {
                                 Home
                             </h4>
                         </Link>
-                        <Link to="/">
+                        <Link to="/explore-talents">
                             <h4>
                                 Explore Talents
                             </h4>
                         </Link>
-                        <Link to="/">
+                        <Link to="/earnings">
                             <h4>
                                 Your Earnings
                             </h4>
                         </Link>
-                        <Link to="/">
+                        <Link to="/about-us">
                             <h4>
                                 About Us
                             </h4>

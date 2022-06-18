@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    grid-gap: 1rem;
     flex-direction: column;
 }
 
@@ -15,6 +16,20 @@
     border-radius: 2.4rem;
 }
 
+.freelancer {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.freelancer > img {
+    width: 5rem;
+}
+
+.freelancer > h3 {
+    font-size: 3rem;
+    color: var(--primary_yellow);
+}
 /*  */
 /*  */
 /*  */

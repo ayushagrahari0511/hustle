@@ -53,6 +53,10 @@ const Mapbox = () => {
             : (
                 <>
                     <div className={styles.wrapper}>
+                        <div className={styles.freelancer}>
+                            <img src="../../location_dark.svg" alt="" />
+                            <h3>Available Freelancer's</h3>
+                        </div>
                         <div ref={mapContainer} className={styles.map_container} />
                     </div>
                 </>

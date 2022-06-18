@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import styles from './ExploreTalents.module.css'
-import FreelanceCard from '../../shared/FreelanceCard.js/FreelanceCard'
+import FreelanceCard from '../FreelanceCard.js/FreelanceCard'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const ExploreTalents = () => {
+  const navigate = useNavigate()
   const [location, setLocation] = useState("remote")
   const [type, setType] = useState(null)
   const [typeToggle, setTypeToggle] = useState(false)
@@ -20,11 +22,11 @@ const ExploreTalents = () => {
               Lorem Ipusm is simply dummy text of the printing and ty pesetting industry. Lorem Ipsum.
             </h5>
             <div className={styles.title_button}>
-              <button className='button_dark'>
+              <button className='button_dark' onClick={() => navigate('/post-job')}>
                 <h5>Post a job</h5>
                 <img src="../../edit.svg" alt="" />
               </button>
-              <button className='button_dark'>
+              <button className='button_dark' onClick={() => navigate('/explore-talents/nearby-freelancer')}>
                 <img src="../../location_filled.svg" alt="" />
                 <h5>Find Nearby Freelancers</h5>
               </button>
@@ -97,8 +99,9 @@ const ExploreTalents = () => {
             </div>
           </div>
           <div className={styles.freelancer}>
-            <div>
+            <div className={styles.arrow}>
               <h5>IT & Development</h5>
+              <img src="../../rightArrow.svg" alt="" />
             </div>
             <div>
             <Link to={`/explore-talents/profile/dkf393dlfk`}>
@@ -117,8 +120,9 @@ const ExploreTalents = () => {
             </div>
           </div>
           <div className={styles.freelancer}>
-            <div>
+            <div className={styles.arrow}>
               <h5>Nearby Freelacers</h5>
+              <img src="../../rightArrow.svg" alt="" />
             </div>
             <div>
             <Link to={`/explore-talents/profile/dkf393dlfk`}>

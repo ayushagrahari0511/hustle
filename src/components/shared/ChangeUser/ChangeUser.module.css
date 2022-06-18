@@ -1,0 +1,20 @@
+.wrapper {
+    margin-top: 10rem;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+.wrapper > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: .5rem 2rem;
+}
+
+.wrapper > button > h3 {
+    color: #fff;
+}

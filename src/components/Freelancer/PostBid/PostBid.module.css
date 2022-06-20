@@ -1,0 +1,171 @@
+/*  */
+/*  */
+.bidwrapper {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+}
+
+.bidwrapper>h2 {
+  color: var(--primary_yellow);
+}
+
+.coverLetter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.coverLetter>h3 {
+  font-size: 2.5rem;
+  color: var(--primary_blue);
+}
+
+.coverLetter>textarea {
+  height: 30rem;
+  padding: 2rem;
+  border: none;
+  outline: none;
+  color: var(--text_mid);
+  background: #fff;
+}
+
+.yourBid {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.yourBid>h3 {
+  font-size: 2.5rem;
+  color: var(--primary_blue);
+}
+
+.yourBid>h4 {
+  color: var(--primary_blue);
+}
+
+.bidList {
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 4rem;
+  grid-row-gap: 1rem;
+}
+
+
+.box select option {
+  padding: 30px;
+  color: #fff;
+  background: var(--primary_blue);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 1rem;
+}
+
+.list>h3 {
+  font-size: 2.5rem;
+  color: var(--primary_blue);
+}
+
+.budget {
+  display: flex;
+  height: 4rem;
+  grid-gap: 1rem;
+  border: 2px solid var(--primary_blue);
+  align-items: center;
+  padding: 1rem;
+  border-radius: .8rem;
+  color: var(--primary_blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+
+.budget>input {
+  text-align: right;
+  width: 4rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--primary_blue);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.budget input::-webkit-outer-spin-button,
+.budget input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.budget input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.box select {
+  background-color: #fff;
+  border: 2px solid var(--primary_blue);
+  height: 4rem;
+  color: var(--primary_blue);
+  padding: 0 1rem;
+  width: 25rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: .8rem;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box select option {
+  padding: 30px;
+  color: #fff;
+  background: var(--primary_blue);
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+  .bidwrapper {
+    margin-top: 8rem;
+  }
+
+  .coverLetter>h3 {
+    font-size: 2rem;
+  }
+
+  .coverLetter>textarea {
+    height: 25rem;
+  }
+
+  .yourBid>h3 {
+    font-size: 2rem;
+  }
+
+  .list>h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+  .box {
+    width: 100%;
+  }
+
+  .box>select {
+    width: 100%;
+  }
+}

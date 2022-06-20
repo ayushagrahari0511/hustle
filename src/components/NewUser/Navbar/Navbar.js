@@ -43,7 +43,6 @@ const Navbar = () => {
               <li
                 className={link_add === "home" ? styles.active : ``}
                 onClick={() => {
-                  setLink_add("home")
                   setToggleMenu(false)}}
               >
                 <Link to="/" >
@@ -55,7 +54,6 @@ const Navbar = () => {
               <li 
               className={link_add === "explore-jobs" ? styles.active : ``}
               onClick={() => {
-                setLink_add("explore-jobs")
                 setToggleMenu(false)}}>
                 <Link to="/explore-jobs">
                   <h6>
@@ -66,7 +64,6 @@ const Navbar = () => {
               <li 
               className={link_add === "explore-talents" ? styles.active : ``}
               onClick={() => {
-                setLink_add("explore-talents")
                 setToggleMenu(false)}}>
                 <Link to="/explore-talents">
                   <h6>
@@ -77,7 +74,6 @@ const Navbar = () => {
               <li 
               className={link_add === "about-us" ? styles.active : ``}
               onClick={() => {
-                setLink_add("about-us")
                 setToggleMenu(false)}}>
                 <Link to="/about-us">
                   <h6>

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './JobCard.module.css'
 import { Link } from 'react-router-dom'
 
-const JobCard = () => {
+const JobCard = ({detail, apply}) => {
   return (
     <>
       <div className={styles.wrapper}>
@@ -41,18 +41,17 @@ const JobCard = () => {
           </div>
         </div>
         <div className={styles.details}>
-          <Link to="/">
+          <Link to={detail}>
             <h4>
               View Details
             </h4>
           </Link>
-          <Link to="/explore-job" className={styles.apply}>
+          <Link to={apply} className={styles.apply}>
             <h4>
               Apply
             </h4>
           </Link>
         </div>
-
       </div>
     </>
   )

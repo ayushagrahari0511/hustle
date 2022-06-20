@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import styles from './Navbar.module.css'
+import styles from '../../Client/Navbar/Navbar.module.css'
 import { Link, useLocation } from "react-router-dom"
 
-const ClientNavbar = () => {
+const FreelancerNavbar = () => {
   const location = useLocation()
   const [toggleMenu, setToggleMenu] = useState(false)
-  const [link_add, setLink_add] = useState("home")
+  const [link_add, setLink_add] = useState("explore-work")
   const [profile, setProfile] = useState(false)
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const ClientNavbar = () => {
       setLink_add(nav)
     }
     else {
-      setLink_add("home")
+      setLink_add("explore-work")
     }
   }, [location.pathname]);
 
@@ -39,36 +39,36 @@ const ClientNavbar = () => {
               onClick={() => setToggleMenu(false)} />
             <div className={styles.links}>
               <li
-                className={link_add === "home" ? styles.active : ``}
+                className={link_add === "explore-work" ? styles.active : ``}
                 onClick={() => {
                   setToggleMenu(false)
                 }}
               >
                 <Link to="/" >
                   <h6>
-                    Home
+                    Explore work
                   </h6>
                 </Link>
               </li>
               <li
-                className={link_add === "explore-talents" ? styles.active : ``}
+                className={link_add === "your-jobs" ? styles.active : ``}
                 onClick={() => {
                   setToggleMenu(false)
                 }}>
-                <Link to="/explore-talents">
+                <Link to="/your-jobs">
                   <h6>
-                    Explore Talents
+                    Your Jobs
                   </h6>
                 </Link>
               </li>
               <li
-                className={link_add === "payments" ? styles.active : ``}
+                className={link_add === "earnings" ? styles.active : ``}
                 onClick={() => {
                   setToggleMenu(false)
                 }}>
-                <Link to="/payments">
+                <Link to="/earnings">
                   <h6>
-                    Your Payments
+                    Your Earnings
                   </h6>
                 </Link>
               </li>
@@ -101,7 +101,7 @@ const ClientNavbar = () => {
                     <img src="../../profile.png" alt="" />
                     <div>
                       <h5>
-                        Client's Name
+                        Frelancer Name
                       </h5>
                       <h6>
                         Title
@@ -145,4 +145,4 @@ const ClientNavbar = () => {
   )
 }
 
-export default ClientNavbar
+export default FreelancerNavbar

@@ -18,3 +18,20 @@
 .wrapper > button > h3 {
     color: #fff;
 }
+
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+  
+ }

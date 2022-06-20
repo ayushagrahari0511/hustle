@@ -38,7 +38,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     padding: 2rem;
     background: #F5F5F5;
     border-radius: 1rem;

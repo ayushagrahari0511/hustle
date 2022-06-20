@@ -1,0 +1,189 @@
+.wrapper {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+}
+
+.wrapper>h4 {
+    color: var(--primary_blue);
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary_blue);
+}
+
+/*Total Balance Starts  */
+.balance h3 {
+    font-size: 2.5rem;
+    color: var(--primary_yellow);
+}
+
+.balance h2 {
+    color: var(--primary_blue);
+}
+
+.balance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.totalBalance {
+    justify-self: flex-start;
+}
+
+.currency {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.currencyBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 6rem;
+    color: var(--primary_blue);
+    border: 2px solid var(--primary_blue);
+    border-radius: .8rem;
+}
+
+.withdraw {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.withdraw>button {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    width: fit-content;
+    color: #fff;
+}
+
+/* History Cards starts here */
+
+.history {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+}
+
+.historyCard {
+    padding: 2rem 4rem;
+    border-radius: .8rem;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    /* Drop Shadow */
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.historyCard h4 {
+    width: fit-content;
+    color: var(--primary_blue);
+}
+
+.historyCard h5 {
+    width: fit-content;
+    color: var(--primary_blue);
+}
+
+.jobTitle {
+    justify-self: flex-start;
+}
+
+.jobType {
+    display: flex;
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.jobType:last-child {
+    justify-self: flex-end;
+}
+
+/* History Cars ends here */
+
+
+@media (max-width: 1199.98px) {
+
+    /*total balance Starts  */
+    .balance h3 {
+        font-size: 2.2rem;
+    }
+
+    /*total balance Ends  */
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .wrapper {
+        margin-top: 8rem;
+    }
+
+    /*total balance Starts  */
+    .balance h3 {
+        font-size: 2rem;
+    }
+
+    /*total balance Ends  */
+}
+
+/* Small devices (landscape phone, ) */
+
+@media (max-width: 767.98px) {
+    .balance h2 {
+        font-size: 2.8rem;
+    }
+            
+    .currencyBtn {
+        padding: .5rem 3rem;
+    }
+        
+    .withdraw>button {
+        font-size: 1.4rem;
+        padding: 0 1.5rem;
+    }
+}
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+    /* Balance styling starts here */
+    .balance {
+        display: flex;
+        grid-gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .withdraw {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .withdraw button {
+        width: 100%;
+    }
+    /* Balance styling ends here */
+    /* history starts here */
+    .historyCard {
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-items: flex-start;
+    }
+
+    .jobType {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* history styling ends here */
+}

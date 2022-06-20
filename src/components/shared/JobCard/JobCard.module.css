@@ -63,6 +63,7 @@
 
 .details > a {
     color: var(--primary_blue);
+    border-bottom: 2px solid var(--primary_blue);
 }
 
 .details h4 {

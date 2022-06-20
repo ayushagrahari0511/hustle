@@ -8,6 +8,14 @@
     grid-gap: 3rem;
 }
 
+.wrapper > h3 {
+    color: var(--primary_yellow);
+}
+
+.wrapper > h2 {
+    color: var(--primary_blue);
+}
+
 /* Top navigation styling */
 
 .top_navigation {
@@ -198,6 +206,9 @@
 }
 
 @media (max-width: 1199.98px) {
+    .wrapper {
+        grid-gap: 2rem;
+    }
 
     .profile_container h3 {
         font-size: 2.4rem;
@@ -242,6 +253,12 @@
 /* Small devices (landscape phone, ) */
 
 @media (max-width: 767.98px) {
+    .container {
+        margin-top: 8rem;
+    }
+    .wrapper {
+        grid-gap: 1rem;
+    }
     .profile_wrapper {
         width: 100%;
         display: flex;

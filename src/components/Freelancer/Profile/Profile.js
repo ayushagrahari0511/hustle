@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const ClientProfile = () => {
+const Profile = () => {
     return (
         <>
             <div className={`container ${styles.container}`}>
@@ -25,7 +25,7 @@ const ClientProfile = () => {
                             <div className={styles.profile}>
                                 <img src="../../profile10.png" alt="" />
                                 <div className={styles.title}>
-                                    <h3>Client's Name</h3>
+                                    <h3>Freelancer's Name</h3>
                                     <h3>Title</h3>
                                     <div>
                                         <img src="../../location.svg" alt="" />
@@ -49,6 +49,24 @@ const ClientProfile = () => {
                         <div className={styles.work_history}>
                             <h3>Work History</h3>
                             <h5>24 jobs finished</h5>
+                        </div>
+                        <div className={styles.skills}>
+                            <h3>Skills</h3>
+                            <div>
+                                <h4>Desinger</h4>
+                                <h4>UI/UX</h4>
+                                <h4>Developer</h4>
+                                <h4>Figma</h4>
+                            </div>
+                        </div>
+                        <div className={styles.portfolio}>
+                            <h3>Portfolio</h3>
+                            <div>
+                                <div>
+                                    <img src="../../sneaker.png" alt="" />
+                                    <h5>Title of portfolio</h5>
+                                </div>
+                            </div>
                         </div>
                         <div className={styles.reviews}>
                             <h3>Reviews <span>(14 Reviews)</span></h3>
@@ -82,4 +100,4 @@ const ClientProfile = () => {
     )
 }
 
-export default ClientProfile
+export default Profile

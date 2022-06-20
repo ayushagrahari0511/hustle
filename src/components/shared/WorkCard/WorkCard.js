@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './WorkCard.module.css'
 import { Link } from 'react-router-dom'
 
-const WorkCard = () => {
+const WorkCard = ({URL}) => {
     return (
         <>
             <div className={styles.wrapper}>
@@ -120,7 +120,7 @@ const WorkCard = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="/" className={styles.apply}>
+                <Link to={URL} className={styles.apply}>
                     <h4>Apply</h4>
                 </Link>
             </div>

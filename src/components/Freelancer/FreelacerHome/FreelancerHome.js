@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import styles from "../../NewUser/FindJob/FindJob.module.css"
+import styling from './FreelancerHome.module.css'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { addJobDetail } from '../../../store/searchJobSlice'
 import JobCard from '../../shared/JobCard/JobCard'
 import { Link } from 'react-router-dom'
 import Mapbox from '../../shared/Mapbox/Mapbox'
+import styles from "../../NewUser/FindJob/FindJob.module.css"
 
 const FreelancerHome = () => {
     const dispatch = useDispatch()
@@ -16,6 +17,7 @@ const FreelancerHome = () => {
     const [title, setTitle] = useState(null)
     const [type, setType] = useState(null)
     const [typeToggle, setTypeToggle] = useState(false)
+    const [filterToggle, setFilterToggle] = useState(false);
 
 
     // Search for Job
@@ -27,6 +29,7 @@ const FreelancerHome = () => {
     return (
         <>
             <div className="container">
+            <span className={filterToggle ? styling.backdrop : styling.backdropInactive}></span>
                 <div className={`wrapper ${styles.explore}`}>
                     <div className={styles.wrapper}>
                         <div className={styles.welcome}>
@@ -106,57 +109,129 @@ const FreelancerHome = () => {
                             </div>
                         </div>
                         <div className={styles.job_container}>
-                            <h3>Available Jobs</h3>
+                            <div className={styling.available}>
+                                <h3>Available Jobs</h3>
+                                <button className='button_light' onClick={() => setFilterToggle(true)}>
+                                    <img src="../../filter.svg" alt="" />
+                                    Filter
+                                </button>
+                                <form className={filterToggle ? styling.form : styling.inactive}>
+                                    <img src="../../icon_cancel.svg" onClick={() => setFilterToggle(false)} alt="" />
+                                    <div className={styling.formList}>
+                                        <h5>Type</h5>
+                                        <div>
+                                            <label htmlFor="both">Both</label>
+                                            <input id="both" type="radio" name="type" value="both" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="remote">Remote</label>
+                                            <input id="remote" type="radio" name="type" value="remote" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor='local'>Local</label>
+                                            <input id="local" type="radio" name="type" value="local" />
+                                        </div>
+                                    </div>
+                                    <div className={styling.formList}>
+                                        <h5>Duration</h5>
+                                        <div>
+                                            <label htmlFor="hour1">0-1 hour</label>
+                                            <input id="hour1" type="radio" name="duration" value="0-1 hour" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="hour2">1-2 hour</label>
+                                            <input id="hour2" type="radio" name="duration" value="1-2 hour" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor='hour3'>3+ hour</label>
+                                            <input id="hour3" type="radio" name="duration" value="3+ hour" />
+                                        </div>
+                                    </div>
+                                    <div className={styling.formList}>
+                                        <h5>Experience</h5>
+                                        <div>
+                                            <label htmlFor="01">Level 1</label>
+                                            <input id="01" type="radio" name="experience" value="1"  />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="02">Level 2</label>
+                                            <input id="02" type="radio" name="experience" value="2" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor='03'>Level 3</label>
+                                            <input id="03" type="radio" name="experience" value="3" />
+                                        </div>
+                                    </div>
+                                    <div className={styling.formList}>
+                                        <h5>Budget</h5>
+                                        <div>
+                                            <label htmlFor="zero">$0-$50</label>
+                                            <input id="zeor" type="radio" name="budget" value="0" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor="fifty">$50-$500</label>
+                                            <input id="fifty" type="radio" name="budget" value="50" />
+                                        </div>
+                                        <div>
+                                            <label htmlFor='fivehundred'>$500</label>
+                                            <input id="fivehundred" type="radio" name="budget" value="500" />
+                                        </div>
+                                    </div>
+                                    <button className='button_dark'>
+                                        Apply
+                                    </button>
+                                </form>
+                            </div>
                             <div className={styles.available_job}>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard 
-                                    detail="/explore-jobs/job-detail/dk43922839fjf9"
-                                    apply="/job/kjdf8348/submit-application" />
+                                    <JobCard
+                                        detail="/explore-jobs/job-detail/dk43922839fjf9"
+                                        apply="/job/kjdf8348/submit-application" />
                                 </Link>
 
                             </div>

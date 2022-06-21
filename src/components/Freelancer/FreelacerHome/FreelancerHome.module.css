@@ -1,0 +1,222 @@
+.available {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.available>h3 {
+    color: var(--primary_blue);
+}
+
+.available button {
+    margin: 0;
+    width: 15rem;
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+}
+
+.available button img {
+    width: 3rem;
+}
+
+.backdropInactive {
+    display: none;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    display: block;
+    backdrop-filter: blur(1px);
+    z-index: 5;
+    transition: all 0.5s;
+}
+
+.inactive {
+    display: none;
+}
+
+.form {
+    --radio-size: 20px;
+    --border-radius: 10px;
+    position: absolute;
+    right: 0;
+    width: 25rem;
+    padding: 1rem 2rem;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    background: #F4F4F4;
+    border-radius: 1.8rem;
+    z-index: 8;
+}
+
+.form > img {
+    width: 2.5rem;
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.form button {
+    align-self: center;
+    margin: .5rem 0;
+    color: #fff;
+}
+
+.formList {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: .5rem;
+    border-bottom: 1px solid var(--primary_blue);
+}
+
+.formList > h5 {
+    color: var(--primary_yellow);
+}
+
+.formList > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form label {
+    font-size: 1.6rem;
+    color: var(--primary_blue);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: var(--radio-size);
+    width: var(--radio-size);
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid var(--primary_blue);
+    background: transparent;
+    border-radius: 50%;
+    display: grid;
+    justify-self: end;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    transition: border 0.5s ease;
+}
+
+.form input[type=radio]::before,
+.form input[type=radio]::after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+}
+
+.form input[type=radio]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--background);
+    z-index: 1;
+    opacity: var(--opacity, 1);
+}
+
+.form input[type=radio]::after {
+    position: relative;
+    width: calc(100% /2);
+    height: calc(100% /2);
+    background: var(--primary_blue);
+    top: var(--y, 100%);
+    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+}
+
+.form input[type=radio]:checked {
+    --radio: var(--radio-checked);
+}
+
+.form input[type=radio]:checked::after {
+    --y: 0%;
+    -webkit-animation: stretch-animate 0.3s ease-out 0.17s;
+    animation: stretch-animate 0.3s ease-out 0.17s;
+}
+
+.form input[type=radio]:checked::before {
+    --opacity: 0;
+}
+
+.form input[type=radio]:checked~input[type=radio]::after {
+    --y: -100%;
+}
+
+.form input[type=radio]:not(:checked)::before {
+    --opacity: 1;
+    transition: opacity 0s linear 0.5s;
+}
+
+@-webkit-keyframes stretch-animate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    28% {
+        transform: scale(1.15, 0.85);
+    }
+
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes stretch-animate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    28% {
+        transform: scale(1.15, 0.85);
+    }
+
+    50% {
+        transform: scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+/* for Medium devices such as tablets */
+@media (max-width: 991.98px) {
+    .available button {
+        width: 12rem;
+    }
+}
+
+
+/* Small devices such as phone */
+
+@media (max-width: 575.98px) {
+    .form {
+        width: 100%;
+        padding: 1rem 2rem;
+        top: -5rem;
+    }
+ }

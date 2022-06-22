@@ -2,8 +2,10 @@
     width: 100%;
     padding-left: 3rem;
     margin-top: 7rem;
-    background: #EBEBEB;
-    border-radius: 4rem;
+    /* background: #EBEBEB; */
+    border: 2px solid var(--primary_blue);
+    border-radius: 5rem;
+    border-right: none;
     display: flex;
     align-items: center;
     grid-gap: 4rem;

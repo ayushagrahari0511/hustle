@@ -22,7 +22,7 @@ const About = () => {
                         </div>
 
                         <div className={styles.about_right}>
-                            <img src="../../about.png" alt="" />
+                            <img src="../../about.webp" alt="" />
                         </div>
                     </div>
                     <div className={styles.our_goal}
@@ -40,7 +40,7 @@ const About = () => {
                             <h5>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                             </h5>
-                            <img src="../../goal_image.png" alt="" />
+                            <img src="../../goal_image.webp" alt="" />
                             <h5>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
                             </h5>
@@ -93,7 +93,7 @@ const About = () => {
                             </button>
                         </div>
                         <div className={styles.contact_image}>
-                                <img src="../../contact.png" className={styles.image_new} alt="" />
+                                <img src="../../contact.webp" className={styles.image_new} alt="" />
                         </div>
                     </div>
                 </div>

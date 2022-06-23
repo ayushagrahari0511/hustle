@@ -29,7 +29,7 @@
 }
 
 .bottomContainer {
-    background: rgba(235, 235, 235, 1);
+    background: rgba(235, 235, 235, 0.42);
     width: 100%;
     border-radius: 4rem;
     display: flex;
@@ -81,6 +81,7 @@
 
 .client_feature {
     display: flex;
+    align-items: center;
     grid-gap: 1rem;
 }
 
@@ -90,9 +91,16 @@
     color: var(--primary_blue);
 }
 
+.fontIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--primary_blue);
+}
+
 .desc>button {
     width: 23rem;
     height: 5rem;
+    margin: 0;
 }
 
 .img {
@@ -132,6 +140,11 @@
         border-radius: 2rem;
         grid-column-gap: 1rem;
         padding: 3rem 2rem;
+    }
+
+    .fontIcon {
+        width: 2rem;
+        height: 2rem;
     }
 
     .desc {
@@ -210,6 +223,12 @@
         flex-direction: column;
         grid-gap: 3rem;
     }
+
+    .fontIcon {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
 
     .desc {
         width: 100%;

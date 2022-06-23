@@ -32,7 +32,6 @@ import { useSelector } from 'react-redux'
 
 function App() {
   const { user } = useSelector(state => state.user_type)
-  console.log(user)
   return (
     <>
       {

@@ -3,6 +3,9 @@ import styles from './ExploreTalents.module.css'
 import FreelanceCard from '../FreelanceCard.js/FreelanceCard'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+
 
 const ExploreTalents = () => {
   const navigate = useNavigate()
@@ -104,7 +107,7 @@ const ExploreTalents = () => {
               <img src="../../rightArrow.svg" alt="" />
             </div>
             <div>
-            <Link to={`/explore-talents/profile/dkf393dlfk`}>
+              <Link to={`/explore-talents/profile/dkf393dlfk`}>
                 <FreelanceCard img={`../../profile5.png`} />
               </Link>
               <Link to={`/explore-talents/profile/dkf393dlfk`}>
@@ -125,7 +128,7 @@ const ExploreTalents = () => {
               <img src="../../rightArrow.svg" alt="" />
             </div>
             <div>
-            <Link to={`/explore-talents/profile/dkf393dlfk`}>
+              <Link to={`/explore-talents/profile/dkf393dlfk`}>
                 <FreelanceCard img={`../../profile1.png`} />
               </Link>
               <Link to={`/explore-talents/profile/dkf393dlfk`}>
@@ -154,15 +157,15 @@ const ExploreTalents = () => {
                 your local or remote job.
               </h5>
               <div className={styles.client_feature}>
-                <img src="../../circle_fill.svg" alt="" />
+                <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                 <h3>Post your job.</h3>
               </div>
               <div className={styles.client_feature}>
-                <img src="../../circle_fill.svg" alt="" />
+                <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                 <h3>Browse and hire talents.</h3>
               </div>
               <div className={styles.client_feature}>
-                <img src="../../circle_fill.svg" alt="" />
+                <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                 <h3>Pay them safely.</h3>
               </div>
 

@@ -3,6 +3,8 @@ import Title from '../../../shared/Title/Title'
 import { useNavigate } from 'react-router-dom'
 import FeatureCard from '../../../shared/FeatureCard/FeatureCard'
 import styles from './Feature.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 
 const Feature = () => {
     const navigate = useNavigate()
@@ -52,15 +54,15 @@ const Feature = () => {
                         your local or remote job.
                     </h5>
                     <div className={styles.client_feature}>
-                        <img src="../../circle_fill.svg" alt="" />
+                        <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                         <h3>Post your job.</h3>
                     </div>
                     <div className={styles.client_feature}>
-                        <img src="../../circle_fill.svg" alt="" />
+                        <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                         <h3>Browse and hire talents.</h3>
                     </div>
                     <div className={styles.client_feature}>
-                        <img src="../../circle_fill.svg" alt="" />
+                        <FontAwesomeIcon icon={faCircleCheck} className={styles.fontIcon} />
                         <h3>Pay them safely.</h3>
                     </div>
 

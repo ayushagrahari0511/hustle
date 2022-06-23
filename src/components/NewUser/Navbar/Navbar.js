@@ -13,6 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const nav = location.pathname.split('/')[1]
+    console.log(nav)
     if(nav) {
       setLink_add(nav)
     }

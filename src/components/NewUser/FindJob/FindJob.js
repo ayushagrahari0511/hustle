@@ -32,6 +32,7 @@ const FindJob = () => {
                 <div className={`wrapper ${styles.explore}`}>
                     <div className={styles.wrapper}>
                         <div className={styles.title}>
+                            <img src="../../office.svg" alt="" />
                             <h2>
                                 Become a <span className={styles.hustle}>Hustler </span> and
                                 work from your home or physically.
@@ -104,7 +105,7 @@ const FindJob = () => {
                                 </div>
                             </div>
                         </div>
-                        <Mapbox/>
+                        <Mapbox />
                         <div className={styles.job_container}>
                             <h3>
                                 What type of job you are looking for?
@@ -117,43 +118,43 @@ const FindJob = () => {
                             <h3>Available Jobs</h3>
                             <div className={styles.available_job}>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                                 <Link to='/explore-jobs/job-detail/dk43922839fjf9'>
-                                    <JobCard />
+                                    <JobCard detail="/" apply="/" />
                                 </Link>
                             </div>
                             <button className={`button_light ${styles.loadMore}`}>

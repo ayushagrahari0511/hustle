@@ -2,13 +2,15 @@
     width: 100%;
     padding-left: 3rem;
     margin-top: 7rem;
-    /* background: #EBEBEB; */
     border: 2px solid var(--primary_blue);
     border-radius: 5rem;
-    border-right: none;
     display: flex;
     align-items: center;
     grid-gap: 4rem;
+}
+
+.signup button {
+    margin: 0;
 }
 
 .desc {
@@ -50,6 +52,9 @@
 
 
 @media (max-width: 1199.98px) {
+    .signup {
+        border-radius: 3.5rem;
+    }
     .desc {
         width: 50%;
     }
@@ -62,9 +67,6 @@
 
 /* for Medium devices such as tablets */
 @media (max-width: 991.98px) {
-    .signup {
-        border-radius: 2rem;
-    }
     .desc {
         width: 50%;
         grid-gap: 1rem;
@@ -87,6 +89,8 @@
         flex-direction: column;
         padding: 0;
         grid-gap: 0;
+        border: 1px solid var(--primary_blue);
+        border-radius: 5rem;
     }
 
     .desc {
@@ -101,4 +105,8 @@
 
 /* Small devices such as phone */
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    .signup {
+        border-radius: 3.2rem;
+    }
+}

@@ -80,6 +80,10 @@
     grid-gap: 1.5rem;
 }
 
+.title > img {
+    width: 90%;
+}
+
 .title>h2 {
     color: var(--primary_blue);
     text-align: center;

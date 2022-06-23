@@ -247,12 +247,18 @@
 
 
 .bottomContainer {
-    background: rgba(235, 235, 235, 1);
+    background: rgba(235, 235, 235, 0.42);
     width: 100%;
     border-radius: 4rem;
     display: flex;
     grid-column-gap: 2rem;
     padding: 4rem 3rem;
+}
+
+.fontIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--primary_blue);
 }
 
 .desc {
@@ -300,6 +306,7 @@
 .client_feature {
     display: flex;
     grid-gap: 1rem;
+    align-items: center;
 }
 
 .client_feature>h3 {
@@ -390,6 +397,11 @@
         border-radius: 2rem;
         grid-column-gap: 1rem;
         padding: 3rem 2rem;
+    }
+
+    .fontIcon {
+        width: 2rem;
+        height: 2rem;
     }
 
     .desc {
@@ -522,6 +534,11 @@
         display: flex;
         flex-direction: column;
         grid-gap: 3rem;
+    }
+
+    .fontIcon {
+        width: 1.8rem;
+        height: 1.8rem;
     }
 
     .desc {

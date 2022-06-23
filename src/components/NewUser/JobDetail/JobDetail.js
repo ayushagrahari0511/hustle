@@ -3,9 +3,7 @@ import styles from "./JobDetail.module.css"
 import SignUpCard from '../../shared/SignUpCard/SignUpCard'
 import WorkCard from '../../shared/WorkCard/WorkCard'
 
-const ExploreJobs = () => {
-
-
+const JobDetail = () => {
     return (
         <>
             <div className="container">
@@ -20,7 +18,7 @@ const ExploreJobs = () => {
                                 Lorem Ipsum is simply dummy text of the printing and ty pesetting industry.Lorem Ipsum.
                             </h5>
                         </div>
-                        <WorkCard/>
+                        <WorkCard URL="/"/>
                     </div>
                     <SignUpCard />
                 </div>
@@ -29,4 +27,4 @@ const ExploreJobs = () => {
     )
 }
 
-export default ExploreJobs
+export default JobDetail

@@ -38,7 +38,8 @@ const persistJobDetail = {
 
 const search_job = persistReducer(persistSearchJob, searchJob)
 const user_type = persistReducer(persistUser, user)
-const job_detail = persistReducer(persistJobDetail, jobDetail)
+const job_detail = persistReducer(persistJobDetail, jobDetail);
+
 export const store = configureStore(
     {
         reducer: {

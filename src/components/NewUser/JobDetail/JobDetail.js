@@ -11,7 +11,7 @@ const JobDetail = () => {
                     <div className={styles.wrapper}>
                         <div className={styles.title}>
                             <h2>
-                                Become a <span className={styles.hustle}>Hustler </span> and
+                                Become a <span className={styles.hustle}>Freelancer Hub </span> and
                                 work from your home or physically.
                             </h2>
                             <h5>

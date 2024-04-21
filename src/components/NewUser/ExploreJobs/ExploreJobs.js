@@ -32,7 +32,7 @@ const ExploreJobs = () => {
                         <div className={styles.title}>
                             <img src="../../office.svg" alt="" width={100} />
                             <h2>
-                                Become a <span className={styles.hustle}>Hustler </span> and
+                                Become a <span className={styles.hustle}>Freelancer </span> and
                                 work from your home or physically.
                             </h2>
                             <h5>

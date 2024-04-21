@@ -11,7 +11,7 @@ const Hero = () => {
                     <div className={styles.hero1_left}>
                         <h2>
                             Enter a New World <br /> of <span className={styles.freelancing}>Freelancing </span>
-                            with <span className={styles.hustle}>Hustle.</span>
+                            with <span className={styles.hustle}>Freelancer Hub.</span>
                         </h2>
                         <h5>
                             Lorem Ipsum is simply dummy text of

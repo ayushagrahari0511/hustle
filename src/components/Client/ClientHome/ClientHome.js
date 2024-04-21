@@ -12,7 +12,7 @@ const ClientHome = () => {
         <div className='container'>
             <div className={`wrapper ${styles.wrapper}`}>
                 <div className={styles.title}>
-                    <h2>Welcome to Hustle!</h2>
+                    <h2>Welcome to Freelancer Hub!</h2>
                     <h5>
                         Lorem Ipsum is simply dummy text of
                         the printing and typesetting industry.

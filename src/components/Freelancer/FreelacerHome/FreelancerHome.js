@@ -33,7 +33,7 @@ const FreelancerHome = () => {
                 <div className={`wrapper ${styles.explore}`}>
                     <div className={styles.wrapper}>
                         <div className={styles.welcome}>
-                            <h2>Welcome to Hustle!</h2>
+                            <h2>Welcome to Freelancer Hub!</h2>
                             <button className='button_dark'>
                                 <img src="../../location_filled.svg" alt="" />
                                 Find Nearby Jobs

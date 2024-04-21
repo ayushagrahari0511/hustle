@@ -5,7 +5,7 @@ const FreelanceCard = ({img}) => {
   return (
     <div className={styles.wrapper}>
         <img src={img} alt="" />
-        <h5>Hustler's name</h5>
+        <h5>Freelancer's name</h5>
         <h6>Job Title</h6>
         <div className={styles.location}>
             <img src="../../location.svg" alt="" />

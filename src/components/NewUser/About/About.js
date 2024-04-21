@@ -12,7 +12,7 @@ const About = () => {
                         <div className={styles.about_left}>
                             <Title
                                 title="What is"
-                                subTitle="Hustle?"
+                                subTitle="Freelancer Hub?"
                                 titleColor="var(--primary_blue)"
                                 subTitleColor="var(--primary_blue)"
                             />
@@ -93,7 +93,7 @@ const About = () => {
                             </button>
                         </div>
                         <div className={styles.contact_image}>
-                                <img src="../../contact.webp" className={styles.image_new} alt="" />
+                            <img src="../../contact.webp" className={styles.image_new} alt="" />
                         </div>
                     </div>
                 </div>

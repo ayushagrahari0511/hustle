@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className={`wrapper ${styles.navbar}`}>
           <div className={styles.logo}>
             <h3>
-              Hustle <span></span>
+            Freelancer Hub <span></span>
             </h3>
           </div>
           <img src="../../menu.svg"

@@ -9,7 +9,7 @@ const ClientFooter = () => {
                 <div className={`${styles.wrapper}`}>
                     <div className={styles.title}>
                         <h2 className={styles.hustle}>
-                            Hustle.
+                        Freelancer Hub.
                         </h2>
                         <Link to="/">
                             <h4>

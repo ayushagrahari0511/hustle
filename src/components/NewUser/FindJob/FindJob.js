@@ -34,7 +34,7 @@ const FindJob = () => {
                         <div className={styles.title}>
                             <img src="../../office.svg" alt="" />
                             <h2>
-                                Become a <span className={styles.hustle}>Hustler </span> and
+                                Become a <span className={styles.hustle}>Freelancer </span> and
                                 work from your home or physically.
                             </h2>
                             <h5>
